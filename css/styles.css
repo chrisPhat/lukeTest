@@ -12,6 +12,7 @@ body{
 .images{
     display: flex;
     flex-wrap: wrap;
+    list-style: none;
 }
 
 .images > li{
