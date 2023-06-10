@@ -18,42 +18,61 @@
         </div>
         <nav>
             <ul class="links">
-                <li>
+                <li class="aboutTrigger socialLinks">
                     <i class="fa-solid fa-circle-info"></i>
                 </li>
-                <li>
-                    <i class="fa-solid fa-envelope"></i>
+                <li class="socialLinks">
+                    <a href="mailto:lukeevans93@outlook.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
                 </li>
-                <li>
-                    <i class="fa-brands fa-instagram"></i>
+                <li class="socialLinks">
+                    <a href="https://www.instagram.com/luke.evans.video/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
                 </li>
-                <li>
-                    <i class="fa-brands fa-vimeo"></i>
+                <li class="socialLinks">
+                    <a href="https://vimeo.com/user201989511" target="_blank">
+                        <i class="fa-brands fa-vimeo"></i>
+                    </a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
         <ul class="images">
-            <li class="imgContainer">
-                <img src="./assets/img1.jpg" alt="">
+            <li class="trigger" data-info="834719691">
+                <img src="./assets/soton.jpg" alt="">
             </li>
-            <li><img src="./assets/img2.jpg" alt=""></li>
-            <li><img src="./assets/img3.jpg" alt=""></li>
-            <li><img src="./assets/img4.jpg" alt=""></li>
-            <li><img src="./assets/img5.jpg" alt=""></li>
-            <li><img src="./assets/img6.jpg" alt=""></li>
-            <li><img src="./assets/img7.jpg" alt=""></li>
-            <li><img src="./assets/img8.jpg" alt=""></li>
-            <li><img src="./assets/img9.jpg" alt=""></li>
-            <li><img src="./assets/img10.jpg" alt=""></li>
             <li></li>
         </ul>
     </main>
     <footer>
         <p>Luke Evans || &copy 2023</p>
-        <a href="mailto:contact@lukeevans.video">contact@lukeevans.video</a>
     </footer>
+
+    <div class="modal videoModal">
+        <div class="modal-content">
+            <h1 id="modalInfo">Hello, I am a modal!</h1>
+            <div id="videoContainer"></div>
+        </div>
+    </div>
+
+    <div class="modal aboutModal">
+        <div class="modal-content">
+            <div class="aboutContent">
+                <div class="aboutInner aboutInnerLeft">
+                    <h1>Hello, I am Luke!</h1>
+                    <img src="./assets/luke.jpg" alt="">
+                </div>
+                <div class="aboutInner aboutInnerRight">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae omnis at facere, tempore adipisci maiores perspiciatis aliquam aspernatur illum a neque corporis odio quo molestias amet mollitia deleniti cupiditate, est veniam, in ab. Totam dolor asperiores adipisci repellat nostrum laudantium praesentium dolore hic illo similique nemo, neque architecto sint voluptatum magni molestias pariatur doloribus libero nihil facilis aut eos eum dolores! Accusamus ab officia consequuntur nihil illum nesciunt repellat! Nam repellendus mollitia accusamus consequatur sed, incidunt laudantium laborum odio alias reiciendis soluta molestias nesciunt quis eius pariatur. Fuga, nesciunt quis optio magnam distinctio reiciendis temporibus itaque labore, in, accusamus ipsa.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://player.vimeo.com/api/player.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
