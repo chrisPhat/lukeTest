@@ -1,6 +1,9 @@
 @font-face {
     font-family: 'cleanfade';
     src: url('../assets/fonts/CleanFade.ttf');
+
+    font-family: 'gobold';
+    src: url('../assets/fonts/Gobold.otf');
 }
 
 *{
@@ -12,7 +15,7 @@
 
 body{
     background-image: url('../assets/footer_lodyas.png');
-    font-family: 'Poppins', sans-serif;
+    font-family: 'gobold', sans-serif;
     color: #333;
 }
 
@@ -148,4 +151,16 @@ img{
     visibility: visible;
     transform: scale(1.0);
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.trigger{
+    border: #333 solid 0px;
+    opacity: 1;
+    transition: all 0.2s linear;
+}
+
+.trigger:hover{
+    cursor: pointer;
+    border-width: 5px;
+    opacity: 0.6;
 }
