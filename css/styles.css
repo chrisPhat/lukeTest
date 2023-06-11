@@ -14,7 +14,7 @@
 }
 
 body{
-    background-image: url('../assets/footer_lodyas.png');
+    background-image: url('../assets/broken_noise.png');
     font-family: 'gobold', sans-serif;
     color: #333;
 }
@@ -23,13 +23,16 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #eee;
+    background-image: url('../assets/broken_noise.png');
+    background-color: #333;
+    color: #eee;
     padding: 10px 20px;
     border-bottom: 5px solid #ccc;
 }
 
 .logo > h1{
-    font-family: cleanfade, sans-serif;
+    font-family: 'Dokdo', sans-serif;
+    color: #ccc;
     letter-spacing: 5px;
 }
 
@@ -57,16 +60,16 @@ footer > a{
 .links > li{
     margin-right: 15px;
     font-size: 25px;
-    color: #333;
+    color: #ccc;
 }
 
 .socialLinks, .socialLinks > a{
-    color: #333;
+    color: #ccc;
     transition: all 0.5s ease-in;
 }
 
 .socialLinks:hover, .socialLinks:hover > a{
-    color: #ccc;
+    color: #eee;
 }
 
 .images{
@@ -113,7 +116,7 @@ img{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url('../assets/footer_lodyas.png');
+    background-image: url('../assets/broken_noise.png');
     background-color: #333;
     width: 100vw;
     height: 30vw;
@@ -163,4 +166,17 @@ img{
     cursor: pointer;
     border-width: 5px;
     opacity: 0.6;
+}
+
+@media only screen and (max-width: 800px) {
+    .modal-content{
+        height: 50vh;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .modal-content{
+        height: 60vh;
+        width: 100%;
+    }
 }
